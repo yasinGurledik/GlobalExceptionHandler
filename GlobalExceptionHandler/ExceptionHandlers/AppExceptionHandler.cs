@@ -16,9 +16,6 @@ namespace GlobalExceptionHandler.ExceptionHandlers
 
 		public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
         {
-
-			
-
 		
             if (exception is not NotImplementedException)
             {

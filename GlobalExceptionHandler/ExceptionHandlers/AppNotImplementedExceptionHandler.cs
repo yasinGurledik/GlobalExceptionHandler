@@ -18,9 +18,7 @@ namespace GlobalExceptionHandler.ExceptionHandlers
 				};
 				
 				httpContext.Response.StatusCode = StatusCodes.Status501NotImplemented;
-				await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);
-			
-				
+				await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);				
 
 				return true;
 
